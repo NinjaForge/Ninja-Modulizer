@@ -1,0 +1,68 @@
+<h3>Basic Setup</h3>
+<p>Ninja Modulizer can be setup in the following way:</p> 
+      <ul> 
+        <li>Install this module</li>
+        <li>Enter any CSS, JS or PHP you wish to use</li>
+        <li>Enter any content you wish to display</li>
+        <li>Input the module ids you wish to display</li>
+        <li>Choose the Layout you wish to use</li>
+        <li>Finally, publish the module</li>
+      </ul>
+<h3>Tips and Extended Use FAQ</h3>
+<dl>
+    <dt>Can I use the module class suffixes to affect the display?</dt>
+    <dd>You can use module class suffixes to affect the module output on the modulizer itself</dd>
+	<dt>What classes and ids are available with modulizer to help me format it?</dt>
+	<dd>Ninja Modulizer will generate one of the layouts below, complete with these classes and ids, depending on your parameters.<br />
+		You can manipulate these layouts via CSS using the classes and ids for the layout you have chosen.
+	</dd>
+</dl>
+<h3>Horizontal Table Layout:</h3>
+<pre>
+&lt;table id=&quot;nmz[the id of this module]&quot; class=&quot;nmzbody nmzhoriztable&quot;&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;nmzcontent nmzinner-1&quot;&gt;[PHP Output and Custom content]&lt;/td&gt;
+    &lt;td class=&quot;nmzmodule nmzinner-1&quot;&gt;[Selected Modules]&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>		
+<h3>Four Divs Layout:</h3>
+<pre>		
+&lt;div id=&quot;nmz[the id of this module]&quot; class=&quot;nmzbody nmzfourdiv&quot;&gt;
+ &lt;div class=&quot;nmzcontent nmzinner-1&quot;&gt;
+  &lt;div class=&quot;nmzinner-2&quot;&gt;        
+   &lt;div class=&quot;nmzinner-3&quot;&gt;
+    &lt;div class=&quot;nmzinner-4&quot;&gt;
+     [PHP Output and Custom content]
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;div class=&quot;nmzmodule nmzinner-1&quot;&gt;
+  &lt;div class=&quot;nmzinner-2&quot;&gt;        
+   &lt;div class=&quot;nmzinner-3&quot;&gt;
+    &lt;div class=&quot;nmzinner-4&quot;&gt;
+     [Selected Modules]
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</pre>		
+<h3>One Div Layout:</h3>
+<pre>	
+&lt;div id=&quot;nmz[the id of this module]&quot; class=&quot;nmzbody nmzonediv&quot;&gt;
+  &lt;div class=&quot;nmzcontent nmzinner-1&quot;&gt;[PHP Output and Custom content]&lt;/div&gt;
+
+  &lt;div class=&quot;nmzmodule nmzinner-1&quot;&gt;[Selected Modules]&lt;/div&gt;
+&lt;/div&gt;
+</pre>		
+<h3>Raw Layout:</h3>
+<pre>	
+&lt;div id=&quot;nmz[the id of this module]&quot; class=&quot;nmzbody nmzraw&quot;&gt;
+  [PHP output and Custom content]
+  [Selected Modules]
+&lt;/div&gt;
+</pre>
+	

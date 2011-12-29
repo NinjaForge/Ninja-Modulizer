@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>Ninja Modulizer</name>
+	<author>Daniel Chapman - Ninja Forge</author>
+	<creationDate>December 2008</creationDate>
+	<copyright>2008 Daniel Chapman, NinjaForge.com</copyright>
+	<license>This extension is released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>support@ninjaforge.com</authorEmail>
+	<authorUrl>http://ninjaforge.com</authorUrl>
+	<version>2.0</version>
+	<description>MODULE DESCRIPTION</description> 
+	<files folder="modules/mod_ninjamodulizer">
+		<filename module="mod_ninjamodulizer">mod_ninjamodulizer.php</filename>
+		<filename>helper.php</filename>
+		<filename>.htaccess</filename>
+		<folder>dashboard</folder>
+		<folder>elements</folder>
+		<folder>parsePHPtmp</folder>
+		<folder>tmpl</folder>
+	</files>
+	
+	<media folder="media/mod_ninjamodulizer" destination="mod_ninjamodulizer">
+		<folder>images</folder>
+		<folder>js</folder>
+		<file>.htaccess</file>
+	</media>
+	
+	<params addpath="/modules/mod_ninjamodulizer/elements">
+		<param name="dynXML" type="dynXML" label="" />
+		<param name="dynCustomCSS" type="dynCustomCSS" label="CUSCSS" description="CUSCSSTXT" rows="3" cols="50" />
+		<param name="moduleclass_sfx" type="text" default="" label="MOD SUFFIX" description="MOD SUFFIX DESC" />		
+		<param name="modids" type="text" default="" label="MOD IDS" description="MOD IDS DESC"/>
+        <param name="validator" type="dynModIDValidator" label="VALIDATOR" description="VALIDATORTXT" />
+        <param name="layout" type="list" default="raw" label="MOD LAYOUT" description="MOD LAYOUT DESC" >
+        		<option value="rounded">ROUNDED</option>
+        		<option value="none">RAW</option>
+        		<option value="table">TABLE</option>
+        		<option value="horz">HORZ</option>
+        		<option value="xhtml">XHTML</option>
+        		<option value="outline">OUTLINE</option>			
+        		<option value="custom">CUSTOM</option>
+        </param> 	
+        <param name="custChrome" type="text" default="" label="CUSTOM CHROME" description="CUSTOM CHROME DESC" /> 	        	        
+    </params> 
+    <params group="advanced">
+    	<param name="modcss" type="textarea" default="" label="MOD CSS" description="MOD CSS DESC" rows="3" cols="50"/>
+    	<param name="modjs" type="textarea" default="" label="MOD JS" description="MOD JS DESC" rows="3" cols="50"/>
+    	<param name="modphp" type="textarea" default="" label="MOD PHP" description="MOD PHP DESC" rows="3" cols="50"/>
+    	<param name="modcontent" type="textarea" default="" label="MOD CONTENT" description="MOD CONTENT DESC" rows="5" cols="50"/>
+    	<param name="dashboard" type="dashboard" default="" label="Dashboard" />            
+	</params>
+	<languages folder="language">
+	        <language tag="en-GB">en-GB.mod_ninjamodulizer.ini</language>
+	</languages>
+</install>
